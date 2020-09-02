@@ -1,0 +1,74 @@
+#content {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 200px;
+}
+
+#content header {
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#content header a {
+    display: flex;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+#content header a span {
+    margin-right: 5px;
+    display: flex;
+    background-image: url('../assets/arrow-left.svg');
+    margin-right: 5px;
+    width: 20px;  
+    height: 20px;  
+}
+
+#content h2{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#content h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: rgb(89, 158, 236);
+}
+
+#content h4{
+    margin-bottom: 0px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.grid-iten {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:space-between;
+    height: 350px;
+    width: 300px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.grid-iten img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#backcolorwhite {
+    background-color: rgba(255, 255, 255, 0.616);
+    height: 5000px;
+    width: 100%;
+}

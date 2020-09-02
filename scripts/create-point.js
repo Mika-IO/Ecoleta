@@ -1,6 +1,6 @@
-itens = document.getElementById('itens');
-state = document.getElementById('estado');
-city = document.getElementById('cidade');
+itens_input = document.querySelector('input[name=itens]');
+state_input = document.querySelector('input[name=estado]');
+city_input = document.querySelector('input[name=cidade]');
 
 function populateUfs() {
     document.getElementsByClassName("cityes").remove
@@ -14,7 +14,7 @@ function populateUfs() {
 }
 
 function populatecities(event) {
-    state.value = event.target.value
+    state_input.value = event.target.value
     url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${event.target.value}/municipios`
     document.getElementById('city-select').innerHTML = `<option>Selecione a cidade</option>`
     fetch(url)  
@@ -35,8 +35,7 @@ document
 document.getElementById('city-select').addEventListener('change', () => {
     i = document.getElementById('city-select').options.selectedIndex;
     option = document.getElementById('city-select').options[i]
-    city = option.value
-
+    city_input.value = option.value
 })
 
 itens = document.querySelectorAll('.grid-itens')
@@ -49,9 +48,7 @@ function selectedUnselected(event){
             selected_itens.push(li.id)
         }
     }
-    itens.value = selected_itens
-    console.log(itens.value)
-}
+    itens_input.value = selected_itens}
 
 for (iten of itens) {
     iten.addEventListener('click', selectedUnselected)
