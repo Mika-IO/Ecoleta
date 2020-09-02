@@ -1,0 +1,75 @@
+@media (max-width: 700px) {
+    #home {
+        background-position-x: 70vw ;
+    }
+
+    #home .content {
+        align-items: center;
+        text-align: center;
+    }
+     
+    #home main {
+        align-items: center;
+    }
+
+    #home header {
+        position:fixed;
+        display: inline;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #home header a {
+        margin-top:40px;
+
+    }
+
+    #home h1 {
+        margin-top: 150px;
+    }
+
+    #create-point form .field-group {
+        display: inline;
+        padding: 100px;
+    }
+    
+    #create-point form .field-group .field + .field {
+        margin-left: 0px;
+    }
+
+    #create-point form {
+        width: 200px;
+    }
+    #create-point form button {
+        width: 150px;
+        font-size: 15px;
+    }
+
+    .grid-itens {
+        grid-template-columns: 1fr ;
+    }
+
+    .cards {
+        grid-template-columns:  1fr;
+    }
+}
+
+@media (max-height: 640px) {
+    #home main {
+        justify-content: start;
+        margin-top:40px;
+    }
+
+    #home {
+        min-height: 450px;
+    }
+
+    
+    #home main h1 {
+        font-size: 150%;
+    }
+
+    #home main p {
+        font-size: 100%;
+    }
+} 

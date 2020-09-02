@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar ponto de coleta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300;400;700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/create-point.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <div id="create-point">
+            <header class="container">
+                <img src="/assets/logo.svg" alt="Ecoleta" class='item'>
+                <a href="index.html" class="item">
+                    <span></span>
+                    Voltar para home
+                </a>
+            </header>
+
+            <main>
+                <form action="">
+                    <h1>Cadastro de ponto de coleta</h1>
+                   
+                    <field>
+                        <legend>
+                            <h2>Dados da entidade</h2>
+                        </legend>
+                        <div class="field">
+                            <label>Nome da entidade</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="field-group">
+                            <div class="field">
+                                <label>Endereço</label>
+                                <input type="text" name="address" required>
+                            </div>
+                            <div class="field">
+                                <label>Numero/Complemento</label>
+                                <input type="text" name="number" required>
+                            </div>
+                        </div>
+                        
+                        <div class="field-group">
+                            <div class="field">
+                                <label>Estado</label>
+                                <select id="uf-select" required>
+                                    <option value="">Selecione o estado</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label>Cidade</label>
+                                <select id="city-select" required>
+                                    <option value="">Selecione a cidade</option>
+                                </select>
+                            </div>
+                          
+                        
+                        </div>
+                    </field>
+                    
+                    <field>
+                        <legend>
+                            <h2>Ítens de coleta</h2>
+                        </legend>
+                        
+                        <div class='grid-itens'>
+                            <li id='item1'>
+                                <img src="/assets/lampadas.svg" alt="Lâmpadas">
+                                <span>Lâmpadas</span>
+                            </li>
+                            
+                            <li id='item2'>
+                                <img src="/assets/baterias.svg" alt="Pilhas e Baterias">
+                                <span>Pilhas e Baterias</span>
+                            </li>
+                            
+                            <li id='item3'>
+                                <img src="/assets/papeis-papelao.svg" alt="Papéis e Papelão">
+                                <span>Papéis e Papelão</span>
+                            </li>
+                            
+                            <li id='item4'>
+                                <img src="/assets/eletronicos.svg" alt="Resíduos Eletronicos">
+                                <span>Resíduos Eletronicos</span>
+                            </li>
+                            
+                            <li id='item5'>
+                                <img src="/assets/organicos.svg" alt="Resíduos Orgânicos">
+                                <span>Resíduos Orgânicos</span>
+                            </li>
+                            
+                            <li id='item6'>
+                                <img src="/assets/oleo.svg" alt="Óleo de cozinha">
+                                <span>Óleo de cozinha</span>
+                            </li>
+                        </div>
+                    </field>
+                    <input type="hidden" name="itens" ></input>
+                    <input type="hidden" name="estado" ></input>
+                    <input type="hidden" name="cidade" ></input>
+                    <button type="submit">Cadastrar ponto de coleta</button>
+                </form>
+            </main>
+            <script src="/scripts/create-point.js"></script>
+    </div>
+</body>
+</html>
